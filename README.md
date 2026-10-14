@@ -1,5 +1,7 @@
 # Applet.WindowMover.at365
 
+8つのウィンドウ操作は[WindowsTools.at365 0.1.5以降](../Applet.WindowsTools.at365/README.md#windowmoverからの切り替え)へ統合しています。新しいコマンドIDは`at365.windows-tools.<操作>`です。切り替える場合は割り当て先を更新して旧WindowMoverを無効にしてください。このrepoは従来版のソースとして保持します。
+
 [Watch.at365](../Watch.at365/README.md) のウィンドウ操作を、[AppDock.at365](../AppDock.at365/README.md) の拡張コマンドとして利用する Windows 用 Applet です。**Windows x64 / AppDock 0.3.1以降**が必要です。
 
 ## 導入・更新

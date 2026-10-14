@@ -1,5 +1,12 @@
 # 検証記録
 
+## 2026-10-14: WindowsToolsへの切り替え案内
+
+- READMEにWindowsTools 0.1.5への統合と新しいコマンドID・割り当て変更・旧Applet無効化の案内を追加。従来版のソースと配布物は保持し、製品実装・版・設定・配布スクリプトを変更していない。
+- 文書差分とgit diff --checkを確認。統合実装・38件の回帰・発行済みDLL実操作・隔離AppDock試験の結果は[WindowsToolsの検証記録](../Applet.WindowsTools.at365/VERIFICATION.md#2026-10-14-windowmoverの8機能を統合015)を参照。文書のみなので当repoの再発行は行っていない。
+- コミット前にREADME/VERIFICATIONの今回の文書差分と参照先を再確認。製品・設定・配布物は変更していないため、旧Appletの製品回帰・再発行は不要。統合先のコミット前照合は[WindowsToolsの検証記録](../Applet.WindowsTools.at365/VERIFICATION.md#2026-10-14-windowmover統合のコミット前照合)に記録している。
+
+
 ## 2026-10-10: 開発生成物を`.artifacts`へ改名
 
 - ユーザー指定でartifacts→.artifactsを改名。移動直後に既存7項目の相対パス/size/mtime/ディレクトリ・リンク属性が一致し、検証終了時も元の全項目のsize/mtime/属性が不変。配布物5ファイルのSHA256も検証前後で一致。保存済みログ/JSONは内部パスを含めて保持し、過去記録の当repoのartifacts/は.artifacts/へ読み替える。
